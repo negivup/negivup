@@ -1,0 +1,64 @@
+{
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+
+  // 控制编辑器显示空白字符的方式
+  //  - none : 不显示
+  //  - boundary : 开头和结尾空白字符全部展示，行中间超过两个空白字符才展示
+  //  - selection : 选中当前行时显示空白字符
+  //  - trailing : 仅显示末尾的空白字符
+  //  - all : 显示所有的空白字符
+  "editor.renderWhitespace": "all",
+
+  // 默认的行结尾符
+  //  - \n : LF
+  //  - \r\n : CRLF
+  //  - auto : 使用当前操作系统特定的行结尾符
+  "files.eol": "\n",
+
+  // 根据指定的字符长度渲染垂直的标尺线
+  "editor.rulers": [80, 120, 160],
+
+  // 控制当前行高亮的展示形式
+  //  - none : 不高亮展示
+  //  - gutter : 行号高亮
+  //  - line : 行内容高亮
+  //  - all : 行号和行内容都高亮
+  "editor.renderLineHighlight": "all",
+
+  // 保存代码自动格式化
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "formattingToggle.affects": [
+    "editor.formatOnPaste",
+    "editor.formatOnSave",
+    "editor.formatOnType"
+  ],
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.ignoreLimitWarning": true,
+  "workbench.colorTheme": "Solarized Light"
+}
