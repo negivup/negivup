@@ -1,0 +1,38 @@
+# 忽略项目及系统的文件
+.DS_Store
+node_modules
+/dist*
+/lib*
+/theme*
+/storybook-static*
+/_site*
+.history
+/coverage*
+dis
+cache
+.cache
+auto-imports.d.ts
+dest
+
+# 本地开发所用到的文件
+.env.local
+.env.*.local
+
+# 包管理工具自动生成的日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-error.log*
+.pnpm-debug.log*
+
+# 编辑器自动生成的配置文件
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 锁定版本文件
+package-lock.json
+yarn.lock
