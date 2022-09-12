@@ -90,4 +90,4 @@ $ npm pkg set scripts.docs:build="vitepress build ."
 $ npm pkg set scripts.docs:serve="vitepress serve ."
 ```
 
-在终端中运行 `pnpm run docs:dev`，然后打开 [http://localhost:5173](http://localhost:5173) 查看效果。
+在终端中运行 `pnpm run docs:dev`，然后打开 `http://localhost:5173` 查看效果。

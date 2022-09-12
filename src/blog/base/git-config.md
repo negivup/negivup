@@ -88,3 +88,45 @@ $ git commit -m "first commit"
 $ git branch -M main
 $ git push -u origin main
 ```
+
+## GitHub Pages{#github-pages}
+
+创建发布脚本 `deploy.sh`：
+
+```sh
+#!/usr/bin/env sh
+
+# 忽略错误
+set -e
+
+# 构建
+npm run docs:build
+
+# 进入待发布的目录
+cd dist
+
+# 如果是发布到自定义域名
+# echo 'www.example.com' > CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果部署到 https://<USERNAME>.github.io
+git push -f git@github.com:negivup/negivup.github.io.git master:gh-pages
+
+# 如果是部署到 https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+
+cd -
+
+rm -f -r dist
+```
+
+创建一个名称为 `<USERNAME>.github.io.git` 的远程仓库，然后执行脚本：
+
+```bash
+$ sh deploy.sh
+```
+
+如果想查看效果，可以通过 [https://negivup.github.io/](https://negivup.github.io/) 查看。
